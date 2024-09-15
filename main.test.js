@@ -4,7 +4,7 @@ test('for hex EFDECD returns Almond', async () => {
   const res = await fetchColors({
     hex: 'EFDECD',
   });
-
+  
   expect(res.length).toEqual(1);
   expect(res[0].name).toEqual('Almond');
 });
@@ -13,7 +13,7 @@ test('for name periwinkle returns Periwinkle', async () => {
   const res = await fetchColors({
     name: 'periwinkle',
   });
-
+  
   expect(res.length).toEqual(1);
   expect(res[0].hex).toEqual('C5D0E6');
 });
